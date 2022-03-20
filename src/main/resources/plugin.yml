@@ -1,10 +1,9 @@
 name: Paradoxium
-version: ${project.version}
+version: '${project.version}'
 author: NickCoder
 description: Paradoxium is a slimefun addon that adds convenient machines and new things.
 
 api-version: 1.16
 main: com.ncoder.paradox.Paradoxium
 
-depend:
-- Slimefun
+depend: [Slimefun]

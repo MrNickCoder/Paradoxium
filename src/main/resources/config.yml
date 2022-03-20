@@ -1,2 +1,6 @@
 options:
-  auto-update: true
+  debug-mode: false
+  auto-update: false
+
+shards:
+  disabled: []
