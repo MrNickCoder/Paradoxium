@@ -1,3 +1,14 @@
+# Paradoxium
+Paradoxium is a Slimefun4 Addon that adds convenient machines and new things.
+
+# Machines
+
+# Generators
+
+# Items
+
+# Gears
+
 # Slimefun4 Addon
 This is an example Repository for a generic Slimefun4 Addon.
 In the top left is a button "Use this template", click this to create your own Addon for Slimefun4 using this basic template.
