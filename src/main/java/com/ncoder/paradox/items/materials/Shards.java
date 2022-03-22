@@ -13,6 +13,9 @@ import org.bukkit.entity.Item;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryDragEvent;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -142,8 +145,21 @@ public class Shards implements Listener {
             "&7???"
     );
 
+    /* Shard Slot */
+    @EventHandler
+    public void onInventoryClick(final InventoryClickEvent e) {
+        if (e.getInventory().getType() == InventoryType.PLAYER) {
+
+        }
+    }
+
+    public void onInventoryDrag(final InventoryDragEvent e) {
+        
+    }
+
+    /* Shards */
     @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
-    public void onFishing(PlayerFishEvent e) {
+    public void onFishing(final PlayerFishEvent e) {
         if (Utils.isCreative(e.getPlayer()) || Utils.isSpectator(e.getPlayer())) return;
         if (isDisabled(WATER_SHARD)) return;
         if (!(e.getCaught() instanceof Item)) return;
