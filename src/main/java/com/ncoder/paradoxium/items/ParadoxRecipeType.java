@@ -1,6 +1,7 @@
 package com.ncoder.paradoxium.items;
 
 import com.ncoder.paradoxium.items.machines.Machines;
+import com.ncoder.paradoxium.items.multiblock.Multiblocks;
 import com.ncoder.paradoxium.utils.Keys;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
@@ -8,7 +9,7 @@ import org.bukkit.Material;
 
 public class ParadoxRecipeType {
 
-    public static RecipeType GIFT_WRAPPER = new RecipeType(Keys.GIFT_WRAPPER, Machines.GIFT_WRAPPER, "&a&oCraft it using the Gift Wrapper");
+    public static RecipeType GIFT_WRAPPER = new RecipeType(Keys.GIFT_WRAPPER, Multiblocks.GIFT_WRAPPER, "&a&oCraft it using the Gift Wrapper");
 
     public static RecipeType STRIPPING = new RecipeType(Keys.STRIPPING, new CustomItemStack(Material.DIAMOND_AXE, "Stripping", "&a&oStrip a log to get the item."));
     public static RecipeType MINING = new RecipeType(Keys.MINING, new CustomItemStack(Material.DIAMOND_PICKAXE, "Mining", "&a&oMine the specified block to get the item."));
